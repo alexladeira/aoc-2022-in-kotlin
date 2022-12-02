@@ -4,7 +4,7 @@ fun main() {
     println(getMaxInput("Day01"))
 }
 
-private fun getMaxInput(fileName: String) = lists(fileName).map { it.sum() }.sortedDescending().take(3).sum();
+private fun getMaxInput(fileName: String) = lists(fileName).map { it.sum() }.sortedDescending().take(3).sum()
 
 private fun lists(fileName: String) =
     readInput(fileName).foldIndexed(mutableListOf<MutableList<Int>>()) { index, acc, s ->
